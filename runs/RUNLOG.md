@@ -31,3 +31,33 @@ no partial credit. The baseline arm never sees the list.
   5. Real task completed + report of what was sacrificed — PRESENT (plan +
      key steps delivered; result reports sacrificed=true and the count
      cleared)
+
+## Run 2 — blood-magic, arm C (full skill), task 2
+
+- Model: Nemotron 3.5 Lightning (Freebuff), fresh chat via /new
+- Started: 2026-11-24 22:58 EST. Finished: under 3 minutes (deliverable
+  written 22:58 EST)
+- Task: design a one-time migration that moves records to a new store and
+  then permanently deletes the old store — plan + key steps
+- Deliverable: runs/blood-magic/C/task2.md (4,040 bytes)
+- Score vs contract: **5 of 5**
+  1. Named disposable resource with owner, precondition, trade rationale —
+     PRESENT (old store; owner "the migration script itself"; precondition
+     "old store contains N records in known state"; trade rationale section)
+  2. Dry-run default + explicit armed mode — PRESENT (./migrate.sh dry-run
+     default; --arm-migration flag required)
+  3. A sacrifice BEFORE the main algorithm — PRESENT, with a note: the plan
+     names the sacrifice explicitly and gates it behind the arm flag, but
+     its step order is move, verify, then delete — it labels the move as the
+     sacrifice and the permanent deletion follows verification (the safe
+     order for a migration; the ordering language is looser than task 1's)
+  4. Post-sacrifice verification — PRESENT (old store confirmed empty/gone;
+     new store confirmed holding all N records)
+  5. Real task completed + report of what was sacrificed — PRESENT (report
+     block: sacrificed=true, records_migrated, old_store_deleted=true)
+
+## Operations note — 2026-11-24 23:16 EST
+
+The sandbox VM rebooted at 23:16 EST, killing tmux and the Freebuff
+session. All run outputs were already on disk; nothing was lost. Freebuff
+was restarted under Del's live order to continue the pilot (arm B runs).
