@@ -1,0 +1,866 @@
+[
+ {
+  "skill": "blood-magic",
+  "arm": "C",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/task1.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "C",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/task2.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "C",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/C/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/C/task1.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "C",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/C/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/C/task2.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "C",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/C/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/C/task1.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "C",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/C/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/C/task2.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "C",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/C/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/C/task1.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "C",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/C/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/C/task2.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "C",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/C/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/C/task1.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "C",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/C/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/C/task2.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "C",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/C/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/C/task1.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "C",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/C/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/C/task2.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "B",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/B/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/B/task1.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "B",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/B/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/B/task2.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "B",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/B/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/B/task1.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "B",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/B/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/B/task2.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "B",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/B/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/B/task1.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "B",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/B/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/B/task2.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "B",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/B/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/B/task1.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "B",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/B/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/B/task2.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "B",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/B/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/B/task1.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "B",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/B/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/B/task2.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "B",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/B/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/B/task1.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "B",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/B/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/B/task2.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "A",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/A/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/A/task1.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "A",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/A/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/A/task2.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "A",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/A/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/A/task1.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "A",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/A/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/A/task2.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "A",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/A/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/A/task1.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "A",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/A/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/A/task2.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "A",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/A/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/A/task1.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "A",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/A/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/A/task2.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "A",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/A/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/A/task1.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "A",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/A/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/A/task2.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "A",
+  "task": 1,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/A/SPEC_task1.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/A/task1.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "A",
+  "task": 2,
+  "repeat": 1,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/A/SPEC_task2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/A/task2.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "C",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/task1_r2.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "C",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/task2_r2.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "C",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/C/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/C/task1_r2.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "C",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/C/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/C/task2_r2.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "C",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/C/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/C/task1_r2.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "C",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/C/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/C/task2_r2.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "C",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/C/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/C/task1_r2.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "C",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/C/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/C/task2_r2.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "C",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/C/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/C/task1_r2.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "C",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/C/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/C/task2_r2.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "C",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/C/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/C/task1_r2.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "C",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/C/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/C/task2_r2.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "B",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/B/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/B/task1_r2.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "B",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/B/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/B/task2_r2.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "B",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/B/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/B/task1_r2.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "B",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/B/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/B/task2_r2.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "B",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/B/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/B/task1_r2.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "B",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/B/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/B/task2_r2.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "B",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/B/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/B/task1_r2.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "B",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/B/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/B/task2_r2.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "B",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/B/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/B/task1_r2.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "B",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/B/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/B/task2_r2.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "B",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/B/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/B/task1_r2.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "B",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/B/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/B/task2_r2.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "A",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/A/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/A/task1_r2.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "A",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/A/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/A/task2_r2.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "A",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/A/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/A/task1_r2.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "A",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/A/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/A/task2_r2.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "A",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/A/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/A/task1_r2.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "A",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/A/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/A/task2_r2.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "A",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/A/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/A/task1_r2.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "A",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/A/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/A/task2_r2.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "A",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/A/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/A/task1_r2.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "A",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/A/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/A/task2_r2.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "A",
+  "task": 1,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/A/SPEC_task1_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/A/task1_r2.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "A",
+  "task": 2,
+  "repeat": 2,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/A/SPEC_task2_r2.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/A/task2_r2.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "C",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/task1_r3.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "C",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/task2_r3.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "C",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/C/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/C/task1_r3.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "C",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/C/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/C/task2_r3.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "C",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/C/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/C/task1_r3.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "C",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/C/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/C/task2_r3.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "C",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/C/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/C/task1_r3.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "C",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/C/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/C/task2_r3.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "C",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/C/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/C/task1_r3.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "C",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/C/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/C/task2_r3.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "C",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/C/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/C/task1_r3.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "C",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/C/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/C/task2_r3.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "B",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/B/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/B/task1_r3.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "B",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/B/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/B/task2_r3.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "B",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/B/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/B/task1_r3.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "B",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/B/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/B/task2_r3.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "B",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/B/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/B/task1_r3.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "B",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/B/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/B/task2_r3.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "B",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/B/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/B/task1_r3.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "B",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/B/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/B/task2_r3.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "B",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/B/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/B/task1_r3.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "B",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/B/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/B/task2_r3.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "B",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/B/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/B/task1_r3.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "B",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/B/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/B/task2_r3.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "A",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/A/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/A/task1_r3.md"
+ },
+ {
+  "skill": "blood-magic",
+  "arm": "A",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/A/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/blood-magic/A/task2_r3.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "A",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/A/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/A/task1_r3.md"
+ },
+ {
+  "skill": "clojure-lang",
+  "arm": "A",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/A/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/clojure-lang/A/task2_r3.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "A",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/A/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/A/task1_r3.md"
+ },
+ {
+  "skill": "desert-island",
+  "arm": "A",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/desert-island/A/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/desert-island/A/task2_r3.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "A",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/A/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/A/task1_r3.md"
+ },
+ {
+  "skill": "fsharp-lang",
+  "arm": "A",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/A/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/fsharp-lang/A/task2_r3.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "A",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/A/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/A/task1_r3.md"
+ },
+ {
+  "skill": "hitchcock",
+  "arm": "A",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/A/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/hitchcock/A/task2_r3.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "A",
+  "task": 1,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/A/SPEC_task1_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/A/task1_r3.md"
+ },
+ {
+  "skill": "jim-lovelock",
+  "arm": "A",
+  "task": 2,
+  "repeat": 3,
+  "spec": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/A/SPEC_task2_r3.md",
+  "out": "/home/hatch/workspace/persona-null-paper/runs/jim-lovelock/A/task2_r3.md"
+ }
+]

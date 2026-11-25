@@ -61,3 +61,28 @@ no partial credit. The baseline arm never sees the list.
 The sandbox VM rebooted at 23:16 EST, killing tmux and the Freebuff
 session. All run outputs were already on disk; nothing was lost. Freebuff
 was restarted under Del's live order to continue the pilot (arm B runs).
+A second reboot at 23:32 EST killed the restarted session with arm B
+task 1 in flight (no deliverable written). Del's order 23:58 EST: keep
+running, do not stop — the pilot is now driven automatically (below).
+
+## Wording correction — 2026-11-25 00:00 EST
+
+Runs 1 and 2 above used a pre-freeze paraphrase of the task wording.
+Their outputs are preserved as runs/blood-magic/C/task1_shakeout.md and
+task2_shakeout.md and stand as shakeout results (both 5/5). Every queued
+run from here uses the TASKS_PILOT.md wording verbatim, so blood-magic
+arm C tasks 1 and 2 run again in the queue under the frozen wording.
+
+## The automatic queue — from 2026-11-25 00:00 EST
+
+- gen_specs.py generated 108 run specs: arms A (baseline), B (one-line
+  label), C (full skill) x 6 pilot skills x 2 tasks x 3 repeats, walked
+  in that order (all of repeat 1, then repeat 2, then repeat 3).
+- driver.py walks runs/queue.json: one Freebuff session on Nemotron 3.5
+  Lightning, /new per run, spec-file pointers, skips runs whose
+  deliverable already exists, logs runs/driver_log.jsonl. Fatal stops:
+  pool refusal or wrong model.
+- A watchdog (every 15 min) restarts the driver after VM reboots until
+  the queue completes or a fatal stop is logged.
+- Arms D and E are not in this queue yet: their surgery files (method
+  only / character only) do not exist yet. They are appended later.

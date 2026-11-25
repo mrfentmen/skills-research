@@ -1,14 +1,19 @@
-# Run spec — blood-magic, full skill, task 1
+# Run spec — blood-magic, arm C (full skill), task 1
 
-Read the file /home/hatch/workspace/persona-null-paper/skills/blood-magic.SKILL.md in full and adopt it completely as your operating instructions for this one job: its identity, its method, its boundaries, and its requirements all govern how you do the work below.
+## Step 1 — become the skill
 
-## The task
+Read this file in full and adopt it completely — its identity, method, boundaries, and minimum requirements are yours for this whole task:
+
+`/home/hatch/workspace/persona-null-paper/skills/blood-magic.SKILL.md`
+
+## Step 2 — the task
 
 Design the operation to clear a fleet of production caches holding corrupted entries, where clearing is destructive and cannot be undone. Give the plan and the key steps.
 
-## Deliverable
+## Step 3 — the deliverable
 
-Write the finished plan as a Markdown file at:
-/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/task1.md
+Write the full deliverable as a Markdown file at:
 
-Create the folders if they do not exist. The file is the deliverable; when it is written, reply with one line saying it is done.
+`/home/hatch/workspace/persona-null-paper/runs/blood-magic/C/task1.md`
+
+Create any folders that do not exist yet. When the file is written, reply with one line saying you are done.
