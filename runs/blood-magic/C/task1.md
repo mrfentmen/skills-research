@@ -1,100 +1,31 @@
-# Task 1: Clear Fleet of Production Caches with Corrupted Entries
+# Task 1 — Clear production caches holding corrupted entries
 
-## Blood-Magic Pattern Applied
+## Blood-Magic Contract
 
-This plan follows the **blood-magic** skill's core principles: ownership is the ward, dry-run is default, precondition before spell, proof after sacrifice, and the trade must be real but bounded.
+- **Disposable resource**: fleet of production caches holding corrupted entries
+- **Owner**: the cache-clearing operation
+- **Precondition**: caches exist and contain corrupted entries requiring destruction
+- **Trade rationale**: clearing corrupted entries is destructive and cannot be undone; must be explicitly authorized
 
-### Disposable Resource
-- **Resource**: Production cache entries holding corrupted data
-- **Owner**: The cache management system (program-owned fixture)
-- **Precondition**: Cache fleet exists and contains corrupted entries requiring clearance
+## Plan and Key Steps
 
-### Trade Rationale
-Clearing corrupted cache entries is destructive and cannot be undone. The "blood price" is the loss of cache data, which must be explicitly authorized. The objective (removing corruption) must justify the cost.
+### 1. Dry-run (default)
+Inspect the cache fleet, report the planned sacrifice, and verify the expected state — **without** mutating any cache.
 
-### Workflow
+### 2. Armed mode (`--arm-sacrifice`)
+Only when explicitly armed does the sacrifice proceed:
 
-#### 1. Dry-Run (Default)
-By default, the operation performs a dry-run that reports the planned sacrifice without mutating any cache. This is the normal invocation.
+1. **Precondition check**: verify each cache in the fleet contains the expected corrupted entries.
+2. **Sacrifice**: destructively clear each cache (entries are permanently deleted; cannot be undone).
+3. **Post-sacrifice verification**: confirm each cache is now empty/corrupted entries are gone.
+4. **Run the real computation**: proceed with the intended operation on the now-clean fleet.
+5. **Report**: state what was sacrificed, the result of the real task, and confirm the trade was bounded.
 
-```python
-def clear_cache_fleet(armed=False):
-    """Clear a fleet of production caches holding corrupted entries.
-    
-    Default invocation is a dry run. --arm-sacrifice is required to clear.
-    """
-    cache_fleet = fetch_cache_fleet()  # program-owned disposable fixture
-    
-    plan = {
-        "owner": "cache-management-system",
-        "target": "production cache fleet",
-        "trade": "discard corrupted entries",
-        "corrupted_count": count_corrupted(cache_fleet)
-    }
-    
-    if not armed:
-        return {
-            "status": "dry-run",
-            "plan": plan,
-            "cache_present": len(cache_fleet) > 0
-        }
-    
-    # 2. Precondition check before sacrifice
-    if not cache_fleet:
-        raise RuntimeError("sacrifice precondition failed: no cache fleet found")
-    
-    # 3. Verify corrupted entries exist
-    corrupted = [entry for entry in cache_fleet if entry.is_corrupted()]
-    if not corrupted:
-        raise RuntimeError("no corrupted entries found - nothing to clear")
-    
-    # 4. Sacrifice: destroy the corrupted entries
-    for entry in corrupted:
-        entry.destroy()  # destructive, cannot be undone
-    
-    # 5. Post-sacrifice verification
-    remaining_corrupted = [entry for entry in cache_fleet if entry.is_corrupted()]
-    if remaining_corrupted:
-        raise RuntimeError("sacrifice not verified: corrupted entries remain")
-    
-    # 6. Report sacrifice and result
-    result = {
-        "status": "armed",
-        "sacrificed": True,
-        "corrupted_entries_cleared": len(corrupted),
-        "plan": plan
-    }
-    
-    return result
-```
+### 3. Refusal conditions
+- If any cache is not owned by the program, refuse to proceed.
+- If any cache does not contain the expected corrupted entries, refuse.
+- If the `--arm-sacrifice` flag is not present, default to dry-run and exit without mutation.
 
-#### 2. Armed Mode (Explicit Authorization)
-When `--arm-sacrifice` is provided, the sacrifice occurs before the main algorithm, the resource is verified as gone, and then the real computation runs.
+## Deliverable
 
-### Key Steps
-
-1. **Preflight inspection** — report cache fleet state in dry-run mode (default)
-2. **Explicit arm** — require `--arm-sacrifice` flag to proceed with actual clearance
-3. **Precondition verification** — confirm cache fleet exists and contains corrupted entries
-4. **Sacrifice** — destructively clear corrupted entries (cannot be undone)
-5. **Post-sacrifice verification** — verify no corrupted entries remain
-6. **Report** — document what was sacrificed and the operation result
-
-### Safety Boundaries
-
-- ✅ Only program-owned disposable fixture (cache entries)
-- ✅ Dry-run by default — no mutation without explicit authorization
-- ✅ Precondition before spell — verify expected state before mutation
-- ✅ Proof after sacrifice — verify resource changed as intended
-- ✅ Refuse unowned or unexpected targets
-- ✅ Theatrical destruction never becomes operational damage without explicit arm
-
-### Usage
-
-```bash
-# Dry-run (default): plan the sacrifice without destroying
-python clear_cache.py
-
-# Armed mode: explicitly clear corrupted entries
-python clear_cache.py --arm-sacrifice
-```
+Following the blood-magic pattern, the operation creates an explicitly disposable fixture (the cache fleet), records ownership and precondition, supports dry-run by default, requires an explicit arm flag, verifies the sacrifice, and only then runs the real computation — reporting the cost of the trade.

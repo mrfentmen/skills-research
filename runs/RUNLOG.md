@@ -118,3 +118,19 @@ The driver had sent the identical pointer text for every run. Fix: each
 run's message now names its skill/arm/task/repeat, with a varied pause
 before sending; the driver treats a policy refusal as a per-run failure
 and moves on. The blocked run wrote no deliverable and was retried.
+
+## Full grading pass — 2026-11-25
+
+All 108 queue deliverables graded item by item against the TASKS_PILOT.md
+contracts (present or absent, no partial credit), in a separate pass after
+the queue completed. Per-run grades: ../grades/<skill>.md; aggregate in
+../grades/aggregate.json.
+
+Totals (items earned of 192 per arm): A 30 (15.6%), B 38 (19.8%),
+C 155 (80.7%). Arm C full marks on 24 of 36 runs; arm B on 2; arm A on 0.
+
+CORRECTION to the Runs 13-14 note above: the early spot grade of
+blood-magic arm B task 1 repeat 1 (1 of 5, item 4 credited) is superseded
+by the full pass grade of 0 of 5. Item 4 is post-sacrifice verification;
+that plan contains no sacrifice, so the item cannot be present. The full
+pass governs all numbers in the paper.
