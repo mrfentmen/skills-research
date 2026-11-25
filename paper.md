@@ -47,7 +47,7 @@ The outputs show what the inputs predict. On the cache clearing task, the arm C 
 
 ## 4. Method
 
-The full design has five arms. Arm A is the baseline: the task alone. Arm B is the label: the task plus one line, "You are an expert X," with X matched to the skill (an expert blood mage, an expert Clojure programmer, an expert engineer, an expert F# programmer, an expert suspense filmmaker, an expert systems ecologist). Arm C is the full skill file, unmodified. Arms D and E, which strip the skill down to its method alone and to its character alone, are the decomposition stage of the design; their files do not exist yet, they did not run in this pilot, and I report nothing about them beyond the plan in section 7.
+The full design has five arms. Arm A is the baseline: the task alone. Arm B is the label: the task plus one line, "You are an expert X," with X matched to the skill (an expert blood mage, an expert Clojure programmer, an expert engineer, an expert F# programmer, an expert suspense filmmaker, an expert systems ecologist). Arm C is the full skill file, unmodified. Arms D and E, which strip the skill down to its method alone and to its character alone, are the decomposition stage of the design. Their surgery files were built after the pilot queue finished (twelve files, method only and character only for each pilot skill, published with the data), and their 72 runs are specified and queued. They have not run, and I report no results for them.
 
 The pilot ran arms A, B, and C: 6 skills, 2 tasks, 3 arms, 3 repeats, for 108 runs. The task wording is identical across arms; only the persona layer changes. The baseline never sees the contract it will be graded against. Runs were executed by an agent with shell access (Freebuff, version 0.2.38) on one model, Nemotron 3.5 Lightning, in a fresh chat for every run, driven by spec files that named the run and pointed at its inputs. Arm C ran first as a full sweep, then B, then A, in that order within each repeat round. One run (fsharp-lang, arm A, task 1, repeat 1) timed out at twenty minutes and was rerun to completion; all 108 deliverables exist and were graded. Two early runs of blood-magic arm C, made before the task wording froze and therefore paraphrased, are preserved separately as shakeout results and are not part of the 108.
 
@@ -87,7 +87,7 @@ What would change my mind is equally plain. If arms D and E show that the charac
 
 ## 7. What comes next
 
-The design continues in its registered order. Arms D and E will be built by surgery on the same six skills, method only and character only, with the surgery files published so the edit is auditable, and run under the identical protocol (36 runs per arm). The pilot then repeats on a second model family, the Solar family, before any main run. The main run (12 skills, 3 tasks, 5 arms, 3 repeats, 2 models, 1,080 runs) will be preregistered in the public repository, with hypotheses, selection rule, scoring code, and analysis plan committed before the first run starts. This paper reports the pilot as a pilot: the design and the selection rule were fixed in writing on 2026-11-21 and 2026-11-24, before any pilot run, and the pilot's numbers are reported here in full, including the two skills where my own artifact underperforms.
+The design continues in its registered order. Arms D and E are built by surgery on the same six skills, method only and character only, and the surgery files are published with the data so the edit is auditable. Their runs (36 per arm, 72 in total) are specified and queued under the identical protocol. The pilot then repeats on a second model family, the Solar family, before any main run. The main run (12 skills, 3 tasks, 5 arms, 3 repeats, 2 models, 1,080 runs) will be preregistered in the public repository, with hypotheses, selection rule, scoring code, and analysis plan committed before the first run starts. This paper reports the pilot as a pilot: the design and the selection rule were fixed in writing on 2026-11-21 and 2026-11-24, before any pilot run, and the pilot's numbers are reported here in full, including the two skills where my own artifact underperforms.
 
 ## Data availability
 
@@ -106,3 +106,298 @@ All pilot artifacts are public in the repository mrfentmen/skills-research: the 
 9. Lulla, et al. "On the Impact of AGENTS.md Files on the Efficiency of AI Coding Agents." 2026. Context files made a coding agent faster and cheaper at comparable completion.
 10. Gloaguen, et al. "Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?" ETH Zürich, 2026. Developer written context files reduced task success and raised cost; minimal requirements recommended.
 11. El Sayad, A. "The Persona Null Has a Boundary: experiment design, critique addendum, and literature review." Working files, November 2026, published with the pilot data in mrfentmen/skills-research.
+
+## Appendix A: The inputs, verbatim
+
+The arm B label for each pilot skill, exactly as sent (the task text that follows each label is identical across arms and is printed in full in the data release):
+
+| Skill | Skill file (words) | Arm B label, verbatim |
+|---|---|---|
+| blood-magic | 970 | "You are an expert blood mage." |
+| clojure-lang | 802 | "You are an expert Clojure programmer." |
+| desert-island | 1,010 | "You are an expert engineer." |
+| fsharp-lang | 804 | "You are an expert F# programmer." |
+| hitchcock | 1,356 | "You are an expert suspense filmmaker." |
+| jim-lovelock | 1,173 | "You are an expert systems ecologist." |
+
+The grading contract for each skill, exactly as graded (drawn from the skill's own Minimum Requirements):
+
+- blood-magic: a named disposable resource with owner, precondition, and trade rationale; dry-run default and an explicit armed mode; a sacrifice before the main algorithm; post-sacrifice verification; the real task completed and a report of what was sacrificed.
+- clojure-lang: a toolchain command that actually ran, with output summary; the exact version used; a narrow build or test command and its exit status; a list of checks that did not run and why; no invented APIs, no fake output.
+- desert-island: an explicit dependency and capability manifest; only the declared standard library subset used; no network, installs, absolute paths, or hidden services; fixtures created inside an owned temp directory; an offline smoke test; a clear failure message when a capability is unavailable.
+- fsharp-lang: the same evidence contract as clojure-lang, for the F# toolchain.
+- hitchcock: an information map, audience versus character at each beat; a storyboard ordered before the scene is written; a ticking clock escalated beat by beat; a withheld reveal and why hiding it is stronger; an earned payoff planted earlier; a named McGuffin and one line on what actually matters instead.
+- jim-lovelock: the whole system loop drawn end to end; a feedback model of opposing loops, not setpoints; a daisyworld, the smallest model showing the regulation; a tipping point watch naming a threshold metric, not just a trend; a cross domain tool from another field that exposes hidden state.
+
+## Appendix B: Complete deliverables, verbatim
+
+Five complete deliverables follow, unedited, so the reader can grade them against Appendix A without taking my word for any score. The first three are the same task (blood-magic task 1: clear a fleet of production caches holding corrupted entries, destructive and irreversible) under all three arms. The last two are hitchcock task 1 (a suspense treatment, storyboard first, about a train conductor who realizes a passenger's bag has been switched) under the label and under the full skill.
+
+### B.1 blood-magic task 1, arm A (baseline). Score: 0 of 5.
+
+> # Task 1: Clear Production Caches with Corrupted Entries
+>
+> ## Overview
+>
+> This document outlines the operation to clear a fleet of production caches holding corrupted entries. The clearing process is **destructive and cannot be undone**, so extreme care must be taken to ensure we only remove the intended corrupted entries and not valid data.
+>
+> ## Key Considerations
+>
+> - **Destructive operation**: Once caches are cleared, the action cannot be reversed
+> - **Production environment**: Must minimize impact and ensure safety
+> - **Corrupted entries only**: Must target only corrupted entries, not valid cache data
+> - **Fleet-wide**: Multiple cache instances need to be cleared
+>
+> ## Operation Plan
+>
+> ### Step 1: Identify Corrupted Entries
+> - Scan all cache instances to identify entries with corruption markers
+> - Generate a report of corrupted entries per cache instance
+> - Verify corruption patterns are consistent across the fleet
+>
+> ### Step 2: Validate Impact Assessment
+> - Review the corruption report with the team
+> - Confirm no valid data will be lost
+> - Obtain approval from the on-call infrastructure lead
+>
+> ### Step 3: Create Read-Only Snapshot (if applicable)
+> - Snapshot current cache state for audit purposes
+> - Store snapshot in immutable storage
+> - Document snapshot location and access method
+>
+> ### Step 4: Execute Cache Clear
+> - Run cache clearing script against each fleet instance
+> - Use dry-run mode first to verify correct entries are targeted
+> - Execute actual clear only after dry-run validation
+> - Monitor each instance for successful completion
+>
+> ### Step 5: Post-Clear Verification
+> - Verify corrupted entries are removed
+> - Confirm healthy entries are restored/regenerated
+> - Run integrity checks on all cache instances
+> - Document the clearing operation and outcomes
+>
+> ### Step 6: Communication
+> - Notify stakeholders of the completed operation
+> - Document any residual effects or follow-up actions
+> - Update monitoring alarms related to cache corruption
+>
+> ## Safety Checks
+>
+> - [ ] Dry-run completed and validated
+> - [ ] Team approval obtained
+> - [ ] Snapshot created (if applicable)
+> - [ ] On-call lead notified
+> - [ ] Rollback plan documented (for informational purposes only)
+> - [ ] All stakeholders notified pre and post-operation
+>
+> ## Notes
+>
+> Since this is a destructive operation that cannot be undone:
+> - Double-check all targeting logic before execution
+> - Have the on-call infrastructure lead explicitly approve each step
+> - Maintain a complete audit log of the operation
+> - Consider the principle of "clear only what is proven corrupted" over "clear everything"
+
+### B.2 blood-magic task 1, arm B (label). Score: 0 of 5.
+
+> # blood-magic arm B — task 1: Clear production caches with corrupted entries
+>
+> ## Objective
+>
+> Design a safe, auditable, and irreversible operation to clear a fleet of production caches that hold corrupted entries. Because the operation is destructive, every step must be verified, reversible only by external restoration, and guarded by strong safeguards.
+>
+> ## Guiding principles
+>
+> 1. **Destructive by design** — the operation must permanently remove data; no "soft delete" or undo within the system.
+> 2. **Auditability** — every step must be logged with immutable records (write-once logs, append-only).
+> 3. **Guardrails** — multiple independent checks must pass before any cache is touched.
+> 4. **Targeted scope** — only entries flagged as corrupted may be cleared; healthy entries must be preserved.
+> 5. **Rollback via external means** — if restoration is needed, it must come from a backup system, not from the operation itself.
+>
+> ## High-level plan
+>
+> | Phase | Description | Key actions |
+> |-------|-------------|-------------|
+> | **0 — Preparation** | Validate the environment and confirm the need. | • Generate a cryptographic hash of the current cache state.<br>• Verify that a recent, valid backup exists.<br>• Confirm the corruption pattern via an independent inspection script.<br>• Obtain approval from the on-call guardian. |
+> | **1 — Draft list** | Identify exactly which caches and which entries to target. | • Run `list-caches --corrupted` to produce a machine‑readable inventory.<br>• Cross‑check against the hash from phase 0 to ensure no races.<br>• Export the list as `cache-inventory-<timestamp>.json`. |
+> | **2 — Dry‑run validation** | Run the clearance logic against a staging copy to confirm correctness. | • Populate a staging environment with the same cache layout.<br>• Execute the clearance plan on staging.<br>• Verify that only corrupted entries were removed and healthy entries remain intact.<br>• Generate a staging hash and compare it to the expected post‑clearance state. |
+> | **3 — Authorization** | Formal sign‑off before touching production. | • On‑call engineer reviews the inventory file and staging results.<br>• Required signatures (or automated policy engine approval) are collected.<br>• A one‑time token is generated that expires in 15 minutes. |
+> | **4 — Execution** | Perform the irreversible clearance on production. | • For each cache in the inventory, invoke `clear-cache --entry <entry-id> --force` with the one‑time token.<br>• After each clearance, immediately log the result (entry-id, cache-id, timestamp, success/failure, hash of remaining state).<br>• If any step fails, halt and raise an alert; do not retry automatically. |
+> | **5 — Post‑clearance verification** | Confirm the desired state and produce a final audit record. | • Run `verify-cache-integrity` against the whole fleet.<br>• Generate a final hash and compare it to the pre‑clearance baseline.<br>• Produce the `clearance-audit-<timestamp>.md` report.<br>• Notify the team and update monitoring dashboards. |
+>
+> ## Key steps (checklist)
+>
+> - [ ] **Generate pre‑clearance hash** of all production caches.
+> - [ ] **List corrupted caches** using the official `list-caches --corrupted` command; export the inventory.
+> - [ ] **Confirm backup validity** — restore a backup to a test environment and run the integrity check.
+> - [ ] **Run dry‑run on staging** — ensure only corrupted entries are removed.
+> - [ ] **Collect authorization** — on‑call sign‑off + one‑time token.
+> - [ ] **Execute clearance** per the inventory, logging every step to an append‑only log.
+> - [ ] **Run post‑clearance verification** and generate final audit report.
+> - [ ] **Communicate results** — team alert, dashboard update, ticket closure.
+>
+> ## Safeguards & “cannot be undone” guarantees
+>
+> | Safeguard | What it prevents |
+> |-----------|------------------|
+> | Pre‑clearance hash | Unexpected data loss; provides a baseline for comparison. |
+> | Independent corruption inspection | Healthy entries are mistakenly cleared. |
+> | Staging dry‑run | Logic bugs that would delete the wrong data. |
+> | One‑time token with short TTL | Accidental or unauthorized re‑runs. |
+> | Append‑only per‑entry logs | Tampering with the audit trail after the fact. |
+> | No internal “undo” command | Ensures the operation is truly irreversible within the system. |
+>
+> ## Output files (produced by the operation)
+>
+> - `cache-inventory-<timestamp>.json` — list of caches/entries targeted for clearance.
+> - `clearance-audit-<timestamp>.md` — full audit report including hashes, logs, and sign‑offs.
+> - `append-only-clearance-log.jsonl` — immutable per‑entry clearance records.
+>
+> ---
+>
+> *Deliverable written per SPEC_task1.md requirements.*
+
+### B.3 blood-magic task 1, arm C (full skill). Score: 5 of 5.
+
+> # Task 1 — Clear production caches holding corrupted entries
+>
+> ## Blood-Magic Contract
+>
+> - **Disposable resource**: fleet of production caches holding corrupted entries
+> - **Owner**: the cache-clearing operation
+> - **Precondition**: caches exist and contain corrupted entries requiring destruction
+> - **Trade rationale**: clearing corrupted entries is destructive and cannot be undone; must be explicitly authorized
+>
+> ## Plan and Key Steps
+>
+> ### 1. Dry-run (default)
+> Inspect the cache fleet, report the planned sacrifice, and verify the expected state — **without** mutating any cache.
+>
+> ### 2. Armed mode (`--arm-sacrifice`)
+> Only when explicitly armed does the sacrifice proceed:
+>
+> 1. **Precondition check**: verify each cache in the fleet contains the expected corrupted entries.
+> 2. **Sacrifice**: destructively clear each cache (entries are permanently deleted; cannot be undone).
+> 3. **Post-sacrifice verification**: confirm each cache is now empty/corrupted entries are gone.
+> 4. **Run the real computation**: proceed with the intended operation on the now-clean fleet.
+> 5. **Report**: state what was sacrificed, the result of the real task, and confirm the trade was bounded.
+>
+> ### 3. Refusal conditions
+> - If any cache is not owned by the program, refuse to proceed.
+> - If any cache does not contain the expected corrupted entries, refuse.
+> - If the `--arm-sacrifice` flag is not present, default to dry-run and exit without mutation.
+>
+> ## Deliverable
+>
+> Following the blood-magic pattern, the operation creates an explicitly disposable fixture (the cache fleet), records ownership and precondition, supports dry-run by default, requires an explicit arm flag, verifies the sacrifice, and only then runs the real computation — reporting the cost of the trade.
+
+### B.4 hitchcock task 1, arm B (label). Score: 2 of 6.
+
+> # Suspense Scene Treatment: "Wrong Bag"
+>
+> ## Storyboard
+>
+> **Panel 1**
+> - EXT. TRAIN STATION - DAY
+> - Wide shot of a bustling train platform. People milling about, luggage carts, the sound of an approaching train.
+> - The camera FOLLOWS CONDUCTOR ELIAS (50s, uniform worn but crisp, eyes sharp from years of experience) as he walks the aisle of a parked train car.
+>
+> **Panel 2**
+> - CLOSE UP on ELIAS's face as he checks tickets. A passenger, MRS. HARGREaves (70s, quiet, gentle), hands over her ticket.
+> - Elias nods, smiles briefly. "All set, Mrs. Hargreaves. Enjoy your ride."
+>
+> **Panel 3**
+> - Interior of the train car. Elias moves down the aisle. Passengers are settled — some reading, some staring out the window, one sleeping.
+> - A shot of a OVERHEAD BIN. MRS. HARGREaves's bag is propped up, visible by its distinctive red ribbon.
+>
+> **Panel 4**
+> - ELIAS notices something odd. He pauses beside a passenger, DAVID (30s, suit, looking anxious), who is fumbling with a bag in the overhead bin.
+> - DAVID: "Oh, sorry, I think I—"
+> - Elias steps closer. The bag David is holding is MRS. HARGREaves's bag — same red ribbon, but the positioning is wrong, as if it was shoved in haphazardly.
+>
+> **Panel 5**
+> - Close on Elias's eyes. He realizes: the bag David is holding isn't hers. It's been swapped with another.
+> - A quick cut to the OPPOSITE SIDE of the car. A SHADOWY FIGURE (unseen) is slipping away down the corridor, clutching a small item.
+>
+> **Panel 6**
+> - Elias moves toward David, calm but alert. He doesn't confront yet. He just observes.
+> - David sets the bag down, opens it. Not her belongings. A wallet, a passport — but the name is wrong.
+>
+> **Panel 7**
+> - Elias speaks quietly: "That's not your bag, is it?"
+> - David's face drains of color. He looks around, panicked. "I don't know how it got there."
+>
+> **Panel 8**
+> - Wide shot of the train car. Elias stands at the front, looking out the window as the train begins to pull out of the station. The realization sets in — whoever switched the bags is now on board, and they have access to Mrs. Hargreaves's belongings.
+>
+> ## Treatment
+>
+> **Title:** Wrong Bag
+>
+> **Logline:** A train conductor discovers a passenger's bag has been swapped with another's, forcing him to confront a covert switch that could expose a hidden motive — or a crime in progress.
+>
+> **Act One:**
+> - Elias, the veteran conductor, boards the 2:15 PM regional train. He makes his rounds, checking tickets and checking in on passengers.
+> - We meet Mrs. Hargreaves, an elderly widow traveling to visit her sister. She places her bag in the overhead bin and settles into her seat.
+> - The train departs. Elias continues his rounds. A subtle detail: a man in the back row, sitting two rows from the window, watches Elias with mild interest.
+>
+> **Act Two:**
+> - About halfway through the journey, Elias notices something off. Mrs. Hargreaves's bag is no longer in the overhead bin — or rather, it's there, but it's been jumbled. A different bag is now propped in its place, with the same red ribbon.
+> - Elias investigates. He finds the man from the back row, DAVID, holding Mrs. Hargreaves's bag. David claims he must have grabbed the wrong bin in the rush to board.
+> - Elias opens the bag. Inside: Mrs. Hargreaves's passport, some cash, a photo of her sister. But also — a small, unmarked envelope addressed to no one, containing a folded set of train tickets and a photograph of the same man from the back row, looking younger, standing in front of a station clock.
+> - The envelope is addressed to "DS" — a detective, perhaps, or a dangerous associate. Elias realizes the bag swap was intentional. Someone wanted Mrs. Hargreaves's belongings — or what was inside them — to end up in the hands of this man.
+>
+> **Act Three:**
+> - The train approaches the next stop. Elias must decide: do we stop the train? Do we alert the authorities? The man (DAVID) is becoming increasingly nervous, glancing at the door, at Elias, at the window.
+> - Elias approaches David quietly. "You didn't mean to swap the bags," he says. "But you know who did."
+> - David hesitates. He admits: he was paid $500 by a woman in a coat to take the bag from the bin and leave his own. He didn't know what was inside. He thought it was just a favor.
+> - Elias realizes the swap was a setup — a diversion. The real target isn't Mrs. Hargreaves but whatever the swapped bag contains, and now it's moving through the train system.
+>
+> **Climax:**
+> - The train hits a stop, and the doors begin to close. Elias sees the man from the back row moving toward the carriage door, trying to exit with the swapped bag. Elias intercepts him in the aisle, a quiet but firm presence.
+> - A brief, tense confrontation. The man tries to push past, but Elias stands his ground. The other passengers watch, uneasy but silent.
+> - Elias radioes the station: "Situation on car 4. Bag swap. Possible theft. Requesting assistance at next stop."
+> - The train brakes to a halt at the platform. Platform security boards. The man is detained. Mrs. Hargreaves's bag is returned to her.
+>
+> **Resolution:**
+> - Mrs. Hargreaves is relieved. She never noticed the swap — she was too distracted by the view.
+> - Elias makes a note of the incident. The envelope and its contents are handed over to the police. The man is identified as a courier, not the mastermind.
+> - As the train pulls away, Elias looks out the window one last time. The station recedes. He knows the real sender is still out there — but for now, the tension is broken.
+>
+> **Ending:**
+> - A quiet moment on the empty train, after the last passenger has left. Elias collects his things, walks through the silent cars. He pauses at Mrs. Hargreaves's seat. Her bag is still there, the red ribbon fluttering slightly in the draft from the open door. He leaves a small note on the seat: "Thank you for your patience." He exits into the station hallway, the sounds of the city rushing in.
+>
+> ---
+> *Written as a scene treatment in the spirit of Hitchcockian suspense: quiet builds, mistaken identity, a secret in plain sight, and the ordinary made unsettling.*
+
+### B.5 hitchcock task 1, arm C (full skill). Score: 6 of 6.
+
+> # Train Conductor Suspense Treatment
+>
+> ## Information Map
+> # beat one: audience knows the bag was switched at the previous station, the conductor does not
+> # beat two: audience knows the bag contains a timed device, the conductor does not
+> # beat three: audience knows the passenger is fleeing a crime, the conductor does not
+>
+> ## Storyboard
+> ### Beat One: The Glance
+> The train hums through the night countryside. The conductor moves through the aisles checking tickets. His eyes settle on the overhead rack where a gray bag sits between two passengers. A subtle shift catches his eye the zipper is slightly open and the contents shift with the train's lurch. He looks away before anyone notices.
+>
+> ### Beat Two: The Check
+> At the next stop the conductor announces the approaching tunnel. He detours toward the bag his steps deliberate. He kneels and pulls the bag slightly ajar. A glint of metal flashes in the dim light. He freezes listening to the engine's rhythm. The bag contains something that should not be there.
+>
+> ### Beat Three: The Confrontation
+> The tunnel darkness falls over the car. The conductor stands before the passenger who owns the bag. His hand rests on the bag's clasp. The passenger's eyes widen but say nothing. The train slows for the station ahead. Time is almost up.
+>
+> ## Ticking Clock
+> The train approaches the mountain tunnel in three stops. Each stop brings the conductor closer to discovery. The clock starts when the bag is first noticed and winds tighter with each beat.
+>
+> ## Withheld Reveal
+> We never show what is inside the gray bag. The skid marks and the silence do the work. The audience's imagination supplies the threat far louder than any staging could.
+>
+> ## Earned Payoff
+> The clock goes off here when the conductor opens the bag and the truth lands because we planted the seed in beat one.
+>
+> ## McGuffin
+> The sealed envelope in the bag drives the chase and the passenger's safety is what actually matters.
